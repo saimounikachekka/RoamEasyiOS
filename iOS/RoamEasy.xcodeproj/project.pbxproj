@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA000001 /* RoamEasyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000002 /* RoamEasyApp.swift */; };
+		AA000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000004 /* ContentView.swift */; };
+		AA000005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA000006 /* Assets.xcassets */; };
+		BB000001 /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000002 /* Attraction.swift */; };
+		BB000003 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000004 /* LocationManager.swift */; };
+		BB000005 /* AttractionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000006 /* AttractionsViewModel.swift */; };
+		BB000007 /* AttractionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000008 /* AttractionCard.swift */; };
+		BB000009 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00000A /* ExploreView.swift */; };
+		CC000001 /* MapSnapshotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC000002 /* MapSnapshotService.swift */; };
+		DD000001 /* HeaderBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD000002 /* HeaderBar.swift */; };
+		EE000001 /* SearchCompleterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE000002 /* SearchCompleterService.swift */; };
+		FF000001 /* SavedPlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF000002 /* SavedPlacesManager.swift */; };
+		FF000003 /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF000004 /* SavedView.swift */; };
+		GG000001 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = GG000002 /* AuthenticationManager.swift */; };
+		GG000003 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = GG000004 /* SignInView.swift */; };
+		HH000001 /* SavedPlacesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = HH000002 /* SavedPlacesService.swift */; };
+		GG000005 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = GG000006 /* GoogleSignIn */; };
+		GG000007 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = GG000008 /* GoogleSignInSwift */; };
+		PP000001 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = PP000002 /* NetworkError.swift */; };
+		PP000003 /* SavedPlaceDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = PP000004 /* SavedPlaceDTO.swift */; };
+		PP000005 /* SavedPlacesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = PP000006 /* SavedPlacesServiceProtocol.swift */; };
+		PP000007 /* ImageServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = PP000008 /* ImageServiceProtocol.swift */; };
+		PP000009 /* AuthenticationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = PP00000A /* AuthenticationServiceProtocol.swift */; };
+		PP00000B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = PP00000C /* AppConfiguration.swift */; };
+		PP00000D /* CachedSavedPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = PP00000E /* CachedSavedPlace.swift */; };
+		PP00000F /* SavedPlacesCacheProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = PP000010 /* SavedPlacesCacheProtocol.swift */; };
+		PP000011 /* SwiftDataSavedPlacesCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = PP000012 /* SwiftDataSavedPlacesCache.swift */; };
+		QL000001 /* MapSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = QL000002 /* MapSection.swift */; };
+		QL000003 /* AttractionsCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = QL000004 /* AttractionsCarousel.swift */; };
+		MT000001 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = MT000002 /* MainTabView.swift */; };
+		TT100001 /* MockSavedPlacesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = TT000001 /* MockSavedPlacesService.swift */; };
+		TT100008 /* MockSavedPlacesCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = TT000008 /* MockSavedPlacesCache.swift */; };
+		TT100002 /* MockImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = TT000002 /* MockImageService.swift */; };
+		TT100003 /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = TT000003 /* MockAuthService.swift */; };
+		TT100004 /* TestFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = TT000004 /* TestFixtures.swift */; };
+		TT100005 /* SavedPlacesManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = TT000005 /* SavedPlacesManagerTests.swift */; };
+		TT100006 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = TT000006 /* MockURLProtocol.swift */; };
+		TT100007 /* SavedPlacesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = TT000007 /* SavedPlacesServiceTests.swift */; };
+		TT100009 /* SwiftDataSavedPlacesCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = TT000009 /* SwiftDataSavedPlacesCacheTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		TT300006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA000050 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA000040;
+			remoteInfo = RoamEasy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA000002 /* RoamEasyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoamEasyApp.swift; sourceTree = "<group>"; };
+		AA000004 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA000006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA000010 /* RoamEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoamEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB000002 /* Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
+		BB000004 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		BB000006 /* AttractionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewModel.swift; sourceTree = "<group>"; };
+		BB000008 /* AttractionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionCard.swift; sourceTree = "<group>"; };
+		BB00000A /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		BB00000B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC000002 /* MapSnapshotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSnapshotService.swift; sourceTree = "<group>"; };
+		DD000002 /* HeaderBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBar.swift; sourceTree = "<group>"; };
+		EE000002 /* SearchCompleterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCompleterService.swift; sourceTree = "<group>"; };
+		FF000002 /* SavedPlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPlacesManager.swift; sourceTree = "<group>"; };
+		FF000004 /* SavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
+		GG000002 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		GG000004 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		HH000002 /* SavedPlacesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPlacesService.swift; sourceTree = "<group>"; };
+		PP000002 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		PP000004 /* SavedPlaceDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPlaceDTO.swift; sourceTree = "<group>"; };
+		PP000006 /* SavedPlacesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPlacesServiceProtocol.swift; sourceTree = "<group>"; };
+		PP000008 /* ImageServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceProtocol.swift; sourceTree = "<group>"; };
+		PP00000A /* AuthenticationServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationServiceProtocol.swift; sourceTree = "<group>"; };
+		PP00000C /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		PP00000E /* CachedSavedPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedSavedPlace.swift; sourceTree = "<group>"; };
+		PP000010 /* SavedPlacesCacheProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPlacesCacheProtocol.swift; sourceTree = "<group>"; };
+		PP000012 /* SwiftDataSavedPlacesCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataSavedPlacesCache.swift; sourceTree = "<group>"; };
+		QL000002 /* MapSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSection.swift; sourceTree = "<group>"; };
+		QL000004 /* AttractionsCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsCarousel.swift; sourceTree = "<group>"; };
+		MT000002 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		TT000001 /* MockSavedPlacesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSavedPlacesService.swift; sourceTree = "<group>"; };
+		TT000008 /* MockSavedPlacesCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSavedPlacesCache.swift; sourceTree = "<group>"; };
+		TT000002 /* MockImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockImageService.swift; sourceTree = "<group>"; };
+		TT000003 /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
+		TT000004 /* TestFixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFixtures.swift; sourceTree = "<group>"; };
+		TT000005 /* SavedPlacesManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPlacesManagerTests.swift; sourceTree = "<group>"; };
+		TT000006 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		TT000007 /* SavedPlacesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPlacesServiceTests.swift; sourceTree = "<group>"; };
+		TT000009 /* SwiftDataSavedPlacesCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataSavedPlacesCacheTests.swift; sourceTree = "<group>"; };
+		TT300001 /* RoamEasyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoamEasyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA000020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				GG000005 /* GoogleSignIn in Frameworks */,
+				GG000007 /* GoogleSignInSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		TT300004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA000030 = {
+			isa = PBXGroup;
+			children = (
+				AA000031 /* RoamEasy */,
+				TT200001 /* RoamEasyTests */,
+				AA000032 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+			AA000031 /* RoamEasy */ = {
+			isa = PBXGroup;
+			children = (
+				AA000002 /* RoamEasyApp.swift */,
+				AA000004 /* ContentView.swift */,
+				PP000020 /* Configuration */,
+				BB000010 /* Models */,
+				BB000011 /* Services */,
+				BB000012 /* ViewModels */,
+				BB000013 /* Views */,
+				AA000006 /* Assets.xcassets */,
+				BB00000B /* Info.plist */,
+			);
+			path = RoamEasy;
+			sourceTree = "<group>";
+		};
+		BB000010 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				PP000002 /* NetworkError.swift */,
+				BB000002 /* Attraction.swift */,
+				PP000004 /* SavedPlaceDTO.swift */,
+				PP00000E /* CachedSavedPlace.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BB000011 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				PP000021 /* Protocols */,
+				GG000002 /* AuthenticationManager.swift */,
+				BB000004 /* LocationManager.swift */,
+				CC000002 /* MapSnapshotService.swift */,
+				EE000002 /* SearchCompleterService.swift */,
+				HH000002 /* SavedPlacesService.swift */,
+				PP000012 /* SwiftDataSavedPlacesCache.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BB000012 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BB000006 /* AttractionsViewModel.swift */,
+				FF000002 /* SavedPlacesManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BB000013 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB000008 /* AttractionCard.swift */,
+				QL000011 /* Explore */,
+				DD000002 /* HeaderBar.swift */,
+				MT000002 /* MainTabView.swift */,
+				FF000004 /* SavedView.swift */,
+				GG000004 /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		QL000011 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				QL000004 /* AttractionsCarousel.swift */,
+				BB00000A /* ExploreView.swift */,
+				QL000002 /* MapSection.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		PP000020 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				PP00000C /* AppConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		PP000021 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				PP00000A /* AuthenticationServiceProtocol.swift */,
+				PP000008 /* ImageServiceProtocol.swift */,
+				PP000010 /* SavedPlacesCacheProtocol.swift */,
+				PP000006 /* SavedPlacesServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AA000032 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA000010 /* RoamEasy.app */,
+				TT300001 /* RoamEasyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		TT200001 /* RoamEasyTests */ = {
+			isa = PBXGroup;
+			children = (
+				TT200002 /* Mocks */,
+				TT200003 /* Helpers */,
+				TT200004 /* ViewModels */,
+				TT200005 /* Services */,
+			);
+			path = RoamEasyTests;
+			sourceTree = "<group>";
+		};
+		TT200002 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				TT000001 /* MockSavedPlacesService.swift */,
+				TT000008 /* MockSavedPlacesCache.swift */,
+				TT000002 /* MockImageService.swift */,
+				TT000003 /* MockAuthService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		TT200003 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				TT000004 /* TestFixtures.swift */,
+				TT000006 /* MockURLProtocol.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		TT200004 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				TT000005 /* SavedPlacesManagerTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		TT200005 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				TT000007 /* SavedPlacesServiceTests.swift */,
+				TT000009 /* SwiftDataSavedPlacesCacheTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA000040 /* RoamEasy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA000060 /* Build configuration list for PBXNativeTarget "RoamEasy" */;
+			buildPhases = (
+				AA000041 /* Sources */,
+				AA000020 /* Frameworks */,
+				AA000042 /* Resources */,
+			);
+			buildToolPlugins = (
+				QL000021 /* SwiftLintBuildToolPlugin */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoamEasy;
+			packageProductDependencies = (
+				GG000006 /* GoogleSignIn */,
+				GG000008 /* GoogleSignInSwift */,
+			);
+			productName = RoamEasy;
+			productReference = AA000010 /* RoamEasy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		TT300002 /* RoamEasyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = TT300008 /* Build configuration list for PBXNativeTarget "RoamEasyTests" */;
+			buildPhases = (
+				TT300003 /* Sources */,
+				TT300004 /* Frameworks */,
+				TT300005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				TT300007 /* PBXTargetDependency */,
+			);
+			name = RoamEasyTests;
+			productName = RoamEasyTests;
+			productReference = TT300001 /* RoamEasyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA000050 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AA000040 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					TT300002 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = AA000040;
+					};
+				};
+			};
+			buildConfigurationList = AA000070 /* Build configuration list for PBXProject "RoamEasy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA000030;
+			packageReferences = (
+				GG000009 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				QL000020 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+			);
+			productRefGroup = AA000032 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA000040 /* RoamEasy */,
+				TT300002 /* RoamEasyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA000042 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000005 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		TT300005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA000041 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000001 /* RoamEasyApp.swift in Sources */,
+				AA000003 /* ContentView.swift in Sources */,
+				BB000001 /* Attraction.swift in Sources */,
+				BB000003 /* LocationManager.swift in Sources */,
+				BB000005 /* AttractionsViewModel.swift in Sources */,
+				BB000007 /* AttractionCard.swift in Sources */,
+				BB000009 /* ExploreView.swift in Sources */,
+				CC000001 /* MapSnapshotService.swift in Sources */,
+				DD000001 /* HeaderBar.swift in Sources */,
+				EE000001 /* SearchCompleterService.swift in Sources */,
+				FF000001 /* SavedPlacesManager.swift in Sources */,
+				FF000003 /* SavedView.swift in Sources */,
+				GG000001 /* AuthenticationManager.swift in Sources */,
+				GG000003 /* SignInView.swift in Sources */,
+				HH000001 /* SavedPlacesService.swift in Sources */,
+				PP000001 /* NetworkError.swift in Sources */,
+				PP000003 /* SavedPlaceDTO.swift in Sources */,
+				PP000005 /* SavedPlacesServiceProtocol.swift in Sources */,
+				PP000007 /* ImageServiceProtocol.swift in Sources */,
+				PP000009 /* AuthenticationServiceProtocol.swift in Sources */,
+				PP00000B /* AppConfiguration.swift in Sources */,
+				PP00000D /* CachedSavedPlace.swift in Sources */,
+				PP00000F /* SavedPlacesCacheProtocol.swift in Sources */,
+				PP000011 /* SwiftDataSavedPlacesCache.swift in Sources */,
+				QL000001 /* MapSection.swift in Sources */,
+				QL000003 /* AttractionsCarousel.swift in Sources */,
+				MT000001 /* MainTabView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		TT300003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				TT100001 /* MockSavedPlacesService.swift in Sources */,
+				TT100008 /* MockSavedPlacesCache.swift in Sources */,
+				TT100002 /* MockImageService.swift in Sources */,
+				TT100003 /* MockAuthService.swift in Sources */,
+				TT100004 /* TestFixtures.swift in Sources */,
+				TT100005 /* SavedPlacesManagerTests.swift in Sources */,
+				TT100006 /* MockURLProtocol.swift in Sources */,
+				TT100007 /* SavedPlacesServiceTests.swift in Sources */,
+				TT100009 /* SwiftDataSavedPlacesCacheTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		TT300007 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA000040 /* RoamEasy */;
+			targetProxy = TT300006 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA000061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = R6MSW3KGQC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RoamEasy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mouni.RoamEasy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA000062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = R6MSW3KGQC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RoamEasy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mouni.RoamEasy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA000071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA000072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		TT300009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6MSW3KGQC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mouni.RoamEasyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoamEasy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RoamEasy";
+			};
+			name = Debug;
+		};
+		TT30000A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6MSW3KGQC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mouni.RoamEasyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoamEasy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RoamEasy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA000060 /* Build configuration list for PBXNativeTarget "RoamEasy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000061 /* Debug */,
+				AA000062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA000070 /* Build configuration list for PBXProject "RoamEasy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000071 /* Debug */,
+				AA000072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		TT300008 /* Build configuration list for PBXNativeTarget "RoamEasyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				TT300009 /* Debug */,
+				TT30000A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		GG000009 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		QL000020 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.63.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		GG000006 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = GG000009 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		GG000008 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = GG000009 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		QL000021 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = QL000020 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = SwiftLintBuildToolPlugin;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AA000050 /* Project object */;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>RoamEasy uses your location to show nearby attractions and places to explore.</string>
+	<key>GIDClientID</key>
+	<string>328473205423-hkvkrgo6vbelj9mqttdfk5qh3tr89r1b.apps.googleusercontent.com</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.328473205423-hkvkrgo6vbelj9mqttdfk5qh3tr89r1b</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

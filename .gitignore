@@ -1,0 +1,15 @@
+node_modules
+.env
+
+# macOS
+.DS_Store
+
+# Xcode user-specific files
+*.xcuserstate
+xcuserdata/
+
+# Xcode build artifacts
+DerivedData/
+
+# PDFs
+*.pdf
